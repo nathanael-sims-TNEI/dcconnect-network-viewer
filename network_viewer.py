@@ -392,8 +392,11 @@ def owner_mask(owners, chosen):
     if not chosen:
         return pd.Series(True, index=owners.index)
     selected = set(chosen)
+    # astype(bool): on an empty table the mapped mask would be object-typed, which pandas
+    # reads as a column selection rather than a row filter.
     return owners.fillna("").map(
-        lambda value: bool(selected & {part.strip() for part in str(value).split(",")}))
+        lambda value: bool(selected & {part.strip() for part in str(value).split(",")})
+    ).astype(bool)
 
 
 def _plural(count, word):

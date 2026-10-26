@@ -1,7 +1,8 @@
-# Top-level packages only. pandapower 3.5.x pins its own data stack (pandas ~=2.3,
+# Top-level packages only. pandapower must be at least the version that exported the
+# model JSON (its format_version); 3.5.x pins its own data stack (pandas ~=2.3,
 # numpy <2.5, scipy and networkx by Python version), so those are left to the resolver.
 streamlit==1.63.0
-pandapower==3.5.4
+pandapower==3.5.6
 plotly==7.0.0
 pillow>=10
 pytest
