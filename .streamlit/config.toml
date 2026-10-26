@@ -1,0 +1,36 @@
+# Theme for the Streamlit viewers in step3_capacity_analysis_and_reporting/visualisation.
+[theme]
+base = "light"
+# Brand palette: dark blue #15143C, mid blue #035F95, teal #008080, light blue #53B4DF,
+# mustard #C9A227, grey #7A7F87 (see BRAND in visualisation/viewer_charts.py).
+primaryColor = "#008080"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F3F5F8"
+textColor = "#15143C"
+font = "Inter, sans-serif"
+headingFont = "Inter, sans-serif"
+baseRadius = "0.5rem"
+showSidebarBorder = true
+
+# Inter is loaded from the Fontsource CDN so it renders without being installed locally;
+# the browser falls back to the system sans-serif when offline.
+[[theme.fontFaces]]
+family = "Inter"
+url = "https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-400-normal.woff2"
+weight = 400
+style = "normal"
+
+[[theme.fontFaces]]
+family = "Inter"
+url = "https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-600-normal.woff2"
+weight = 600
+style = "normal"
+
+[[theme.fontFaces]]
+family = "Inter"
+url = "https://cdn.jsdelivr.net/npm/@fontsource/inter@5/files/inter-latin-700-normal.woff2"
+weight = 700
+style = "normal"
+
+[browser]
+gatherUsageStats = false
