@@ -1,10 +1,7 @@
-# Pinned to the versions the viewer was developed and tested against (Python 3.11).
+# Top-level packages only. pandapower 3.5.x pins its own data stack (pandas ~=2.3,
+# numpy <2.5, scipy and networkx by Python version), so those are left to the resolver.
 streamlit==1.63.0
 pandapower==3.5.4
-pandas==3.0.6
-numpy==2.4.6
-scipy==1.16.3
-networkx==3.6.1
 plotly==7.0.0
-pillow==12.2.0
+pillow>=10
 pytest
