@@ -1,4 +1,4 @@
-# Theme for the Streamlit viewers in step3_capacity_analysis_and_reporting/visualisation.
+# Theme for the Streamlit network viewer.
 [theme]
 base = "light"
 # Brand palette: dark blue #15143C, mid blue #035F95, teal #008080, light blue #53B4DF,
